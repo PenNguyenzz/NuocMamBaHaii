@@ -16,7 +16,7 @@
     <meta name="description" content="@ViewBag.SeoDescription" />
     <meta name="keywords" itemprop="keywords" content="@ViewBag.SeoKeyWord" />
     @*<meta name="news_keywords" content="@ViewBag.SeoKeyWord" />*@
-    <link rel="canonical" href="https://www.ten_mien_cua_cac_ban/" />
+    <link rel="canonical" href="https://localhost:44375/s" />
     <meta name="robots" content="index,follow,noodp" />
     <meta name="robots" content="noarchive">
     <meta property="og:site_name" content="Bán hàng online" />
@@ -57,7 +57,7 @@
 
                                     <!-- Currency / Language / My Account -->
 
-                                    <li class="currency">
+                            @*        <li class="currency">
                                         <a href="#">
                                             usd
                                             <i class="fa fa-angle-down"></i>
@@ -80,7 +80,7 @@
                                             <li><a href="#">German</a></li>
                                             <li><a href="#">Spanish</a></li>
                                         </ul>
-                                    </li>
+                                    </li>*@
                                     <li class="account">
                                         @if (!Request.IsAuthenticated)
                                         {
@@ -101,7 +101,7 @@
                                             </a>
                                             <ul class="account_selection">
                                                 <li><a href="/"><i class="fa fa-sign-in" aria-hidden="true"></i>Profile</a></li>
-                                                <li><a href="javascript:document.getElementById('logOffForm').submit()"><i class="fa fa-user-plus" aria-hidden="true"></i> Lohout</a></li>
+                                                <li><a href="javascript:document.getElementById('logOffForm').submit()"><i class="fa fa-user-plus" aria-hidden="true"></i> Logout</a></li>
                                             </ul>
                                         }
 
@@ -129,7 +129,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-right">
                             <div class="logo_container">
-                                <a href="/">colo<span>shop</span></a>
+                                <a href="/">CỬA HÀNG<span> NƯỚC MẮM BÀ HAI</span></a>
                             </div>
                             <nav class="navbar">
                                 @Html.Action("MenuTop", "Menu")
@@ -159,7 +159,7 @@
             <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
             <div class="hamburger_menu_content text-right">
                 <ul class="menu_top_nav">
-                    <li class="menu_item has-children">
+                   @* <li class="menu_item has-children">
                         <a href="#">
                             usd
                             <i class="fa fa-angle-down"></i>
@@ -182,7 +182,7 @@
                             <li><a href="#">German</a></li>
                             <li><a href="#">Spanish</a></li>
                         </ul>
-                    </li>
+                    </li>*@
                     <li class="menu_item has-children">
                         <a href="#">
                             My Account
