@@ -804,13 +804,14 @@ section
 	transform: translateY(-50%);
 	left: 15px;
 }
-.logo_container a
-{
-	font-size: 24px;
-	color: #1e1e27;
-	font-weight: 700;
-	text-transform: uppercase;
-}
+	.logo_container a {
+		font-family: rukola;
+		font-size: 29.84px;
+		color: #8a1e1c;
+		display: inline;
+		margin: 0;
+		margin-right: 3px;
+	}
 .logo_container a span
 {
 	color: #fe4c50;
