@@ -193,6 +193,8 @@
     <Compile Include="Areas\Admin\Controllers\StatisticalController.cs" />
     <Compile Include="Common\Common.cs" />
     <Compile Include="Common\SettingHelper.cs" />
+    <Content Include="Content\assets\images\decor-right-footer.png" />
+    <Content Include="Content\assets\images\footer-bg-ship.png" />
     <Content Include="Content\assets\styles\contact_style.css" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ArticleController.cs" />

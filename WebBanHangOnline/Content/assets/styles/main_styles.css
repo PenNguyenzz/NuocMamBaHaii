@@ -1336,7 +1336,7 @@ h4.left-slogan-header {
 7. Best Sellers
 *********************************/
 .best_sellers {
-	background: url(/Content/assets/images/banner-pro.png) no-repeat;
+	background: url(/Content/assets/images/backnews.png) no-repeat;
 	background-size: cover;
 	padding-bottom: 190px;
 	position: relative;
@@ -2069,4 +2069,255 @@ span.content-handbook {
 	text-align: center;
 	padding: 0px 238px;
 	padding-top: 60px;
+}
+.banner-default {
+	display: block;
+	overflow: hidden;
+}
+
+	.banner-default img {
+		width: 100%;
+		display: block;
+	}
+footer {
+	position: relative;
+}
+
+.status-no {
+	margin-left: 10px;
+}
+
+	.status-no strong {
+		color: #eeab51;
+	}
+
+footer:before {
+	content: "";
+	position: absolute;
+	z-index: 99;
+	top: -150px;
+	width: 100%;
+	height: 156px;
+	background: url(/Content/assets/images/footer-bg-ship.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+}
+footer .middle {
+	padding: 25px 0 40px;
+	color: #fff;
+	background: #960103;
+	/* border-top: 4px solid #ffbb00; */
+}
+
+	footer .middle .container {
+		overflow: hidden;
+	}
+
+footer .infocompany .title-footer {
+	font-size: 24px;
+	font-family: ps;
+}
+
+	footer .infocompany .title-footer img {
+		float: left;
+		max-width: 94px;
+		margin-right: 10px;
+	}
+
+	footer .infocompany .title-footer span {
+		display: block;
+		margin-top: 15px;
+	}
+
+	footer .infocompany .title-footer:after {
+		margin-left: 104px;
+	}
+
+footer .text-footer {
+	font-size: 15px;
+	color: #f9f8f7;
+	margin-top: 0;
+	font-weight: normal;
+	line-height: 26px;
+	margin-top: 10px;
+}
+
+footer .title-footer {
+	font-size: 18px;
+	color: #fbe8a6;
+	font-family: ps;
+	font-weight: normal;
+	padding-bottom: 0;
+	position: relative;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+footer .text-footer li a {
+	color: #ffffff;
+	font-family: notoSR;
+	font-size: 14px;
+}
+
+.infocompany .text-footer div:before {
+	content: "";
+	font-family: "fontawesome";
+	color: #fbe8a6;
+	margin-right: 1px;
+	width: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+.infocompany .text-footer div:nth-child(1):before {
+	content: "\f3c5";
+}
+
+.infocompany .text-footer div:nth-child(2):before {
+	content: "\f3c5";
+}
+
+.infocompany .text-footer div:nth-child(3):before {
+	content: "\f10b";
+}
+
+.infocompany .text-footer div:nth-child(4):before {
+	content: "\f095";
+	transform: rotate(90deg);
+}
+
+.infocompany .text-footer div:nth-child(5):before {
+	content: "\f0e0";
+	/* font-weight: bold; */
+}
+
+.infocompany .text-footer div:nth-child(6):before {
+	content: "\f0ac";
+	font-weight: bold;
+}
+
+.infocompany .text-footer {
+	font-size: 14px;
+	display: block;
+	font-family: 'notoSR';
+	margin-top: 10px;
+	position: relative;
+}
+
+	.infocompany .text-footer a {
+		font-weight: bold;
+	}
+
+	.infocompany .text-footer img {
+		position: absolute;
+		width: 178px !important;
+		height: auto !important;
+		bottom: 67px;
+		right: 0;
+	}
+
+.menu-footer {
+	float: left;
+	/* width: 59%; */
+}
+
+.infocompany {
+	width: 38%;
+}
+
+.middle .right {
+	width: 59%;
+	margin-top: 20px;
+}
+
+.menu-footer.menu1 {
+	 margin-top: 25px; 
+	width: 21%;
+}
+
+.menu-footer.menu3 {
+	width: 41%;
+	float: right;
+	margin-left: 10px !important;
+}
+
+.menu-footer + .menu-footer {
+	margin-left: 3%;
+}
+
+.menu-footer .fb-page.fb_iframe_widget iframe {
+	width: 100% !important;
+}
+
+.menu-footer .fb-page.fb_iframe_widget {
+	margin-top: 0;
+}
+
+.menu-footer .title-footer {
+	margin-top: 0;
+	text-transform: inherit;
+}
+
+.menu-footer li {
+	transition: transform .5s;
+	position: relative;
+	margin-left: 14px;
+}
+
+.menu-footer li:before {
+		content: "";
+		background: url(/Content/assets/images/decor-right-footer.png) no-repeat;
+		/* font-weight: 900; */
+		/* font-size: 13px; */
+		width: 6px;
+		height: 9px;
+		top: 10px;
+		left: -13px;
+		position: absolute;
+	}
+
+	.menu-footer li:hover {
+		transform: translateX(10px);
+	}
+
+footer .foot {
+	padding: 8px 0;
+	background: #c11f2f;
+	font-size: 13px;
+	font-family: 'pr';
+	color: #ffffff;
+}
+
+.foot .container {
+	overflow: hidden;
+}
+
+footer .foot .text a {
+	color: #e4d194;
+}
+
+.foot .right a {
+	color: #e2bf8b;
+}
+
+.foot .visitor {
+	position: relative;
+	margin-right: 10px;
+	padding-right: 15px;
+	margin-top: 8px;
+}
+
+.visitor strong {
+	color: #ffffff;
+}
+
+.foot .left.text div {
+	display: inline-block;
+}
+
+.foot .left.text {
+	margin-top: 9px;
+}
+
+.foot .visitor i {
 }

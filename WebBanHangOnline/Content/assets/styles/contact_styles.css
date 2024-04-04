@@ -1223,7 +1223,7 @@ textarea:hover
 	width: 160px;
 	height: 46px;
 	border: none;
-	background:#b9b4c7;
+	background:#fe4c50;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
@@ -1232,7 +1232,7 @@ textarea:hover
 }
 .newsletter_submit_btn:hover
 {
-	background: #b5aec4;
+	background:#fde0db;
 }
 
 /*********************************
