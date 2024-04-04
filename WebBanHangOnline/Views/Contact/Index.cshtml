@@ -1,9 +1,11 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Liên hệ";
 }
 <link rel="stylesheet" type="text/css" href="~/Content/assets/styles/contact_styles.css">
 <link rel="stylesheet" type="text/css" href="~/Content/assets/styles/contact_responsive.css">
+<link rel="stylesheet" href="~/Content/assets/styles/contact_style.css">
+
 
 <div class="container contact_container">
     <div class="row">
@@ -13,7 +15,7 @@
 
             <div class="breadcrumbs d-flex flex-row align-items-center">
                 <ul>
-                    <li><a href="index.html">Liên hệ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
                     <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact</a></li>
                 </ul>
             </div>
@@ -23,19 +25,93 @@
 
     <!-- Map Container -->
 
-    <div class="row">
-        <div class="col">
-            <h3>Thông tin liên hệ</h3>
-            <p>Tên: Hoàng</p>
-            <p>SDT: 0986.993.748</p>
-            <p>Email: ngohoang29@gmail.com</p>
-        </div>
-        <div class="col">
-            <div id="google_map">
-                <div class="map_container">
-                  
-                    <div id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118928.564979778!2d105.88983051047838!3d21.33006745265189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31351a7b1b7b2ac1%3A0x7a90cb6a6f9a0bd3!2zSGnhu4dwIEjDsmEsIELhuq9jIEdpYW5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1679375815182!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="wrapper-bodycontact">
+        <div class="heading-pageDetail d-none"><div class="container"><h1>Liên lạc</h1></div></div>
+        <div class="wrapbox-content-contact">
+            <div class="container pd-top">
+                <div class="row widthContent">
+                    <div class="col-lg-6 col-md-12 col-12 wrapbox-content-left">
+                        <div class="box-info-contact">
+                            <h2>Thông tin liên hệ</h2>
+                            <div class="wrapbox-contact">
+                                <ul class="infoList-contact row">
+                                    <li class="col-md-12 col-xs-12">
+                                        <span><i class="fa fa-map-marker"></i></span>
+                                        <p><strong>Địa chỉ</strong><br>232 Bis Tôn Thất Thuyết, Phường 3, Quận 4, TP.HCM</p>
+                                    </li>
+                                    <li class="col-md-12 col-xs-12">
+                                        <span><i class="fa fa-phone"></i></span>
+                                        <p><strong>Điện thoại</strong><br>0945 04 6060</p>
+                                    </li>
+                                </ul>
+                                <ul class="infoList-contact row">
+                                    <li class="col-md-12 col-xs-12">
+                                        <span><i class="fa fa-calendar"></i></span>
+                                        <p><strong>Thời gian làm việc</strong><br>Thứ 2-6: Sáng 8.00–11.30, Chiều 13.30–16.30; Thứ 7: 8.00 –11.30; Chủ nhật: nghỉ</p>
+                                    </li>
+                                    <li class="col-md-12 col-xs-12">
+                                        <span><i class="fa fa-envelope-o"></i></span>
+                                        <p><strong>Email</strong><br>contact@nuocmamhanhphuc.com.vn</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="box-send-contact">
+                            <h2>Gửi thắc mắc cho chúng tôi</h2>
+                            <p>Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và chúng tôi sẽ liên lạc lại với bạn sớm nhất có thể .</p>
+                            <div id="col-left contactFormWrapper">
+                                <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post">
+                                    <input name="form_type" type="hidden" value="contact">
+                                    <input name="utf8" type="hidden" value="✓">
+
+
+                                    <div class="contact-form">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xs-12">
+                                                <div class="input-group">
+                                                    <input required="" type="text" name="contact[name]" class="form-control" placeholder="Tên của bạn" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-12">
+                                                <div class="input-group">
+                                                    <input required="" type="text" name="contact[email]" class="form-control" placeholder="Email của bạn" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-12">
+                                                <div class="input-group">
+                                                    <input pattern="[0-9]{10,12}" required="" type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại của bạn" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-xs-12">
+                                                @*<div class="input-group">
+                                                    <textarea required="" name="contact[body]" placeholder="Nội dung"></textarea>
+                                                    <div class="sitebox-recaptcha ">
+                                                        This site is protected by reCAPTCHA and the Google
+                                                        <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>
+                                                        and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
+                                                    </div>
+                                                </div>*@
+                                            </div>
+                                            <div class="col-sm-12 col-xs-12">
+                                                <button class="button dark">Gửi cho chúng tôi</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <input id="7532c1d77a244a118d53a10658b3b252" name="g-recaptcha-response" type="hidden" value="03AFcWeA6OJWVskNzvokQ7cP_zmyNujouGkGUkrzuSP38zAAGFN0VtQ201UJj8LIDm1Shqg3x0jt2UlCMxOUKNIn1xSo1Lai48bPK0lKNQYt3ju_shCqFTrqg_pn4rk9gsEErHhIUUsZn4CiFruP6nvRXGmjG13U6ZbvZPtxIsMXcy1GqZXcsI2nutMN1xUzLRWl979KCyC3uuD_xCVj3bjJsGvKMGoCEysb8yyjknQvIA9pEPDS8zEr8XwMIHA7R8bZ6E_b1xyBKipzzlwJ-nJew_rHdboqrhZuvxkDzqJId6P0o-IijYh3LYDp7UbnJXURKpxMkXaYiyLYo4zI6IcjqZe4CkEhHNdMWaEoWeY_oSYJhZwqYJWnk9yEQgWj-1aILgqJPUzFuIU2jRT2OP5A_UoeHXytwnLLbh3HQZiQ4pNnXpMye3NmmdXvzPzLKOLdSqtBaSOblqSQRxQfuSGxZ5ttutF3LRfZDBf2utPa1-pfl1ubHBI6bcEP_j6uLMxJ60_fQLXYMDG5DVRrQwQJ-DZ9NwGsFJwpM5-FhV16GgZFMG0blDFsY-zYj4tSxX9-vyCM7zAqqRAh3qhAGLYMGbu8o82WbmLqyWxA6xvpqj3_JMEDmRkEYAMc9VZcTtxSklSbpA6_geoLsoL1Lzw1fkjDVJuJ6OviFtcdD8WyTLcctVA_KQEi4cyZ6qxgQOAlGTk5JkFaFpjTEJCLalcHakSrlsYWYOVldCyBDtY0vS8ZTNSpakJ28">
+                                    <script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
+                                    <script>grecaptcha.ready(function () { grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' }).then(function (token) { document.getElementById('7532c1d77a244a118d53a10658b3b252').value = token; }); });</script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12 wrapbox-content-right">
+
+                        <div class="box-map-contact">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.98489360619823!2d106.6983954355557!3d10.75310210151316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3397be487d17474!2zQ8OUTkcgVFkgVE5ISCBDSOG6viBCSeG6vk4gVEjhu7BDIFBI4bqoTSBI4bqgTkggUEjDmkM!5e0!3m2!1sen!2s!4v1556864159002!5m2!1sen!2s" width="790" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -44,58 +120,6 @@
 
     <!-- Contact Us -->
 
-    <div class="row">
-
-        <!--<div class="col-lg-6 contact_col">
-            <div class="contact_contents">
-                <h1>Contact Us</h1>
-                <p>There are many ways to contact us. You may drop us a line, give us a call or send an email, choose what suits you the most.</p>
-                <div>
-                    <p>(800) 686-6688</p>
-                    <p>info.deercreative@gmail.com</p>
-                </div>
-                <div>
-                    <p>mm</p>
-                </div>
-                <div>
-                    <p>Open hours: 8.00-18.00 Mon-Fri</p>
-                    <p>Sunday: Closed</p>
-                </div>
-            </div>-->
-
-            <!-- Follow Us -->
-
-            <!--<div class="follow_us_contents">
-                <h1>Follow Us</h1>
-                <ul class="social d-flex flex-row">
-                    <li><a href="#" style="background-color: #3a61c9"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#" style="background-color: #41a1f6"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#" style="background-color: #fb4343"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li><a href="#" style="background-color: #8f6247"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-
-        </div>-->
-
-        @*<div class="col-lg-6 get_in_touch_col">
-            <div class="get_in_touch_contents">
-                <h1>Get In Touch With Us!</h1>
-                <p>Fill out the form below to recieve a free and confidential.</p>
-                <form action="post">
-                    <div>
-                        <input id="input_name" class="form_input input_name input_ph" type="text" name="name" placeholder="Name" required="required" data-error="Name is required.">
-                        <input id="input_email" class="form_input input_email input_ph" type="email" name="email" placeholder="Email" required="required" data-error="Valid email is required.">
-                        <input id="input_website" class="form_input input_website input_ph" type="url" name="name" placeholder="Website" required="required" data-error="Name is required.">
-                        <textarea id="input_message" class="input_ph input_message" name="message" placeholder="Message" rows="3" required data-error="Please, write us a message."></textarea>
-                    </div>
-                    <div>
-                        <button id="review_submit" type="submit" class="red_button message_submit_btn trans_300" value="Submit">send message</button>
-                    </div>
-                </form>
-            </div>
-        </div>*@
-
-    </div>
 </div>
 @section scripts{
     <script src="~/Content/assets/js/contact_custom.js"></script>
