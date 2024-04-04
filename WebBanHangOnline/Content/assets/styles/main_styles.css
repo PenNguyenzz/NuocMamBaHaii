@@ -830,20 +830,20 @@ section
 	background-position: center center;
 	margin-top: 150px;
 }
-.slider_image {
-	max-width: 40%; /* Ensure image doesn't exceed container width */
-	max-height: 100%; /* Ensure image doesn't exceed container height */
-}
+
+
 .main_slider_content
 {
 	width: 60%;
 }
-.main_slider_content h6
-{
-	font-weight: 500;
-	text-transform: uppercase;
-	margin-bottom: 29px;
-}
+	.main_slider_content h6 {
+		font-size: 22px;
+		font-family: pl;
+		color: #ffe9be;
+		font-weight: 500;
+		margin: 0;
+		margin-bottom: 21px;
+	}
 .main_slider_content h1
 {
 	font-weight: 400;
@@ -1690,4 +1690,239 @@ section
 .footer_social ul li a:hover
 {
 	color: #fe4c50;
+}
+span.des-about-item {
+	font-size: 15px;
+	color: #ffe9be;
+	font-family: notoSR;
+	line-height: 1.7;
+	display: block;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.banner-text {
+	width: 100%;
+	text-align: center;
+	padding: 0 116px;
+	padding-bottom: 10px;
+}
+ul.room-utilities {
+	width: 57%;
+	margin-top: 115px;
+	padding-left: 44px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+	ul.room-utilities li {
+		list-style-type: none;
+		display: flex;
+		text-align: left;
+		padding-top: 21px;
+	}
+
+		ul.room-utilities li:nth-child(1) {
+			margin-right: 24px;
+		}
+
+		ul.room-utilities li h4 {
+			font-size: 28px;
+			color: #981100;
+			font-weight: 500;
+			font-family: 'rukola';
+			margin: 0;
+			/* margin-right: 30px; */
+			line-height: 27px;
+			display: flex;
+			display: -webkit-flex;
+			justify-content: center;
+			-webkit-justify-content: center;
+			align-items: center;
+			-webkit-align-items: center;
+			margin-left: 5px;
+			/* padding-right: 58px; */
+			width: 102px;
+		}
+
+.img-utilities {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 91px;
+	height: 90px;
+	/* margin: auto; */
+	background: url(/Design/NuocMamBaHai/back-tieuchi.png) no-repeat;
+	background-size: cover;
+}
+
+	.img-utilities img {
+		display: flex;
+		display: -webkit-flex;
+		justify-content: center;
+		-webkit-justify-content: center;
+		align-items: center;
+		-webkit-align-items: center;
+		margin: auto;
+	}
+h3.top-pro-title {
+	font-family: rukola;
+	font-weight: 500;
+	color: #801716;
+	font-size: 48px;
+	margin: 0;
+	line-height: 1.5;
+}
+h3 {
+	display: block;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	unicode-bidi: isolate;
+}	
+.top-product-name {
+	text-align: center;
+	font-family: notoSR;
+	font-weight: 500;
+	font-size: 16px;
+	color: #56544f;
+	padding: 0px 182px;
+	margin-bottom: 34px;
+}
+.wp-procedure {
+	background: url(/Content/assets/images/back-quytrinh.png) no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 676px;
+}
+
+.top-procedure {
+    text-align: center;
+    padding-top: 92px;
+}
+ul.list-procedure {
+	display: grid;
+	grid-auto-rows: minmax(min-content, max-content);
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	column-gap: 20px;
+	row-gap: 20px;
+	padding-top: 85px;
+}
+
+ul.list-procedure li:nth-child(1) .img-procedure {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 195px;
+	height: 180px;
+	margin: auto;
+	background: url(/Content/assets/images/quytrinh1.png) no-repeat;
+	background-size: cover;
+	/* position: relative; */
+}
+
+ul.list-procedure li:nth-child(4) .img-procedure {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 206px;
+	height: 183px;
+	margin: auto;
+	background: url(/Content/assets/images/quytrinh4.png) no-repeat;
+	background-size: cover;
+}
+
+ul.list-procedure li:nth-child(4) .img-procedure img {
+    margin-left: 58px;
+}
+
+ul.list-procedure li:nth-child(2) .img-procedure {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 202px;
+	height: 186px;
+	margin: auto;
+	background: url(/Content/assets/images/quytrinh2.png) no-repeat;
+	background-size: cover;
+}
+
+ul.list-procedure li:nth-child(2) .img-procedure img {
+    margin-left: 55px;
+}
+
+ul.list-procedure li:nth-child(3) .img-procedure {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 199px;
+	height: 182px;
+	margin: auto;
+	background: url(/Content/assets/images/quytrinh3.png) no-repeat;
+	background-size: cover;
+}
+
+ul.list-procedure li:nth-child(3) .img-procedure img {
+    margin-left: 48px;
+    margin-bottom: 40px;
+}
+
+.img-procedure img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+span.content-procedure {
+    font-size: 14px;
+    color: #ecdeb9;
+    font-family: 'notoSR';
+    line-height: 1.6;
+}
+
+li.item-procedure h4 {
+    font-size: 32px;
+    font-family: 'rukola';
+    font-weight: 500;
+    color: #ecdeb9;
+    margin: 0;
+    margin-top: 47px;
+}
+
+li.item-procedure:nth-child(2) h4 {
+    margin-top: 44px;
+}
+h4 {
+	display: block;
+	margin-block-start: 1.33em;
+	margin-block-end: 1.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	unicode-bidi: isolate;
 }
