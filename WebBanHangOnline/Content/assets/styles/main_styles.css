@@ -829,6 +829,7 @@ section
 	background-size: cover;
 	background-position: center center;
 	margin-top: 150px;
+
 }
 
 
@@ -948,9 +949,14 @@ section
 5. New Arrivals
 *********************************/
 
-.new_arrivals
-{
+.new_arrivals {
 	width: 100%;
+	padding-top: 145px;
+	padding-bottom: 35px;
+	background: url(/Content/assets/images/banner-pro.png) no-repeat;
+	background-size: cover;
+	position: relative;
+	/* border-top: 23px solid #c4a37e; */
 }
 .new_arrivals_title
 {
@@ -1307,9 +1313,18 @@ section
 /*********************************
 7. Best Sellers
 *********************************/
+.best_sellers {
+	background: url(/Content/assets/images/banner-pro.png) no-repeat;
+	background-size: cover;
+	padding-bottom: 190px;
+	position: relative;
+	z-index: 1;
+	top: -80px;
+	/* bottom: 33px; */
+	/* height: 1201px; */
+}
 
-.product_slider_container
-{
+.product_slider_container {
 	width: 100%;
 	height: 340px;
 	margin-top: 73px;
@@ -1910,7 +1925,7 @@ li.item-procedure h4 {
     font-family: 'rukola';
     font-weight: 500;
     color: #ecdeb9;
-    margin: 0;
+    margin: 0;wp-handbook
     margin-top: 47px;
 }
 
@@ -1925,4 +1940,111 @@ h4 {
 	margin-inline-end: 0px;
 	font-weight: bold;
 	unicode-bidi: isolate;
+}
+.wp-handbook {
+	background: url(/Content/assets/images/backCamNang.png) no-repeat;
+	background-size: cover;
+	padding-bottom: 190px;
+	position: relative;
+	z-index: 1;
+	top: -80px;
+	/* bottom: 33px; */
+	/* height: 1201px; */
+}
+
+ul.list-handbook {
+	display: grid;
+	grid-auto-rows: minmax(min-content, max-content);
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	column-gap: 22px;
+	row-gap: 27px;
+	padding-top: 50px;
+	margin-top: 0;
+	margin-bottom: 73px;
+}
+
+li.item-handbook {
+	list-style: none;
+	height: 100%;
+}
+
+.wp-img-handbook img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.wp-img-handbook {
+	position: relative;
+	height: 100%;
+	border: 3px solid transparent;
+	border-radius: 10px;
+}
+
+	.wp-img-handbook:after {
+		content: "";
+		left: 0;
+		z-index: 1;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: transparent;
+	}
+
+h6.title-item-handbook {
+	position: absolute;
+	z-index: 3;
+	bottom: 45px;
+	color: #ffffff;
+	font-family: 'notoSR';
+	margin: 0 47px;
+	padding: 14px 20px;
+	font-weight: 500;
+	border-radius: 10px;
+	font-size: 15px;
+	text-align: center;
+	background: rgb(122 30 22 / 80%);
+}
+
+.wp-img-handbook:hover {
+	border: 3px solid #801716;
+	transition: all linear .3s;
+}
+
+	.wp-img-handbook:hover::after {
+		background: rgb(128 23 22 / 40%);
+	}
+
+	.wp-img-handbook:hover h6.title-item-handbook {
+		background: rgb(248 237 226 / 90%);
+		color: #801716;
+	}
+
+ul.list-handbook a {
+	height: 100%;
+}
+h5.title-handbook {
+	font-family: 'rukola';
+	font-size: 52px;
+	font-weight: 500;
+	color: #801716;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 36px;
+	line-height: 1.4;
+}
+
+span.content-handbook {
+	font-family: 'notoSR';
+	font-size: 15px;
+	color: #474747;
+	/* padding: 0 280px; */
+	line-height: 1.6;
+}
+
+.top-handbook {
+	text-align: center;
+	padding: 0px 238px;
+	padding-top: 60px;
 }
