@@ -52,6 +52,11 @@ namespace WebBanHangOnline.Controllers
             }
         }
 
+        public ActionResult Profile()
+        {
+            return View();
+        }
+
         //
         // GET: /Account/Login
         [AllowAnonymous]
